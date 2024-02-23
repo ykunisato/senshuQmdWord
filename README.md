@@ -1,25 +1,36 @@
-# Japanese Psychological Research Template
+# senshuQmdWord
 
-This is a Quarto template that assists you in creating a manuscript for Japanese Psychological Research. 
+これは専修大学の心理学科の卒論・修論用のQuartoテンプレートになります。Qmd形式で卒論を書いて，Wordで出力できます。
 
-## Creating a New Article
+## 新規作成
 
-You can use this as a template to create an article for Japanese Psychological Research. To do this, use the following command:
+TerminalやPowerShellで以下のコマンドを打ち込んでもらえると利用できます。
 
 ```bash
 quarto use template ykunisato/senshuQmdWord
 ```
 
-This will install the extension and create an example qmd file and bibiography that you can use as a starting place for your article.
+なお，[psyinfr](https://github.com/ykunisato/psyinfr)を利用されている場合は，Rコンソール上でset_rc()を実行すると追加されます。
 
-## Installation For Existing Document
+## 既存のプロジェクトへの追加
 
-You may also use this format with an existing Quarto project or document. From the quarto project or document directory, run the following command to install this format:
+既に存在するQuartoプロジェクトに追加する場合は，以下のコマンドを打ち込みます。
 
 ```bash
 quarto add ykunisato/senshuQmdWord
 ```
 
-## Usage
+## 使用法
 
-Open the qmd file in RStudio, and after making modifications, click on 'Render'. A Word file will be generated.
+paper_word.qmdファイルを開いて，自分の卒論・修論の内容を書き込んで，'Render'をクリックしてください。Wordファイルが出力されます。
+
+## 使用上の注意
+
+- なぜかタイトル・氏名の直後に目次が挿入されています。そのため，(1)Word出力後にタイトル・氏名の後ろで改ページする。(2)目次の後ろの本文でセクションを分けて，そこからページ番号がスタートするようにする，(3)目次を更新するなどの作業が必要です。
+
+- 引用文献リストで日本語文献と英語文献が分かれて出力されますので，手作業で修正ください。
+
+- このテンプレートは，専修大学の国里愛彦が個人的に作成しているものです。心理学科として品質保証するものではないので，卒業論文・修士論文の手びきをご自身で確認をした上で利用ください。
+
+
+
